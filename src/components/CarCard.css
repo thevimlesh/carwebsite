@@ -1,0 +1,115 @@
+
+.car-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #d3eaf2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: 90%;
+    margin: 25px;
+  }
+  
+  .car-card-year-box {
+    background-color: transparent;
+    color: #000000;
+    font-size: 16px;
+    padding: 4px 8px;
+    border: 2px dotted #5888bc;
+    border-radius: 10px;
+    margin-right: 25px;
+    margin-top: -10px;
+  }
+  
+  .car-card-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .car-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .car-card-horizontal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .car-card-detail {
+    flex: 1;
+  }
+  
+  .car-card-footer {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3eaf2;
+  }
+  
+  .car-card-price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .wishlist-button,
+  .rent-now-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .wishlist-button:hover,
+  .rent-now-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+  }
+  
+  .car-card img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 18px;
+  }
+  
+  .car-card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .car-card-name {
+    margin-left: 15px;
+  }
+  
+  /* Media query for screens smaller than 768px (adjust breakpoints as needed) */
+  @media screen and (max-width: 768px) {
+    .car-card {
+      width: 100%; /* Adjust card width for smaller screens */
+      margin: 10px; /* Reduce margin for smaller screens */
+    }
+  
+    .car-card-year-box {
+      margin-right: 10px; /* Reduce margin for smaller screens */
+    }
+  
+    .car-list {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    }
+  }
+  
